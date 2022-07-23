@@ -9,24 +9,24 @@
       <a class="logo-header-link" href="#">
         <img class="logo-header" src="/images/header/logo-header.svg" alt="Логотип «Девайс»">
       </a>
+      <ul class="navigations-user">
+        <li class="navigation-item">
+          <form class="navigation-user-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="navigation-user-form-field" type="search" name="searchquery" placeholder="Текст поиска">
+            <button class="navigation-user-form-button" type="submit">Найти</button>
+          </form>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Войти</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Сравнить</a>
+        </li>
+        <li class="navigation-item">
+          <button class="navigation-item-button" type="button">Корзина</button>
+        </li>
+      </ul>
       <nav class="header-navigation">
-        <ul class="navigations-user">
-          <li class="navigation-item">
-            <form class="navigation-user-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="navigation-user-form-field" type="search" name="searchquery" placeholder="Текст поиска">
-              <button class="navigation-user-form-button" type="submit">Найти</button>
-            </form>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Войти</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <button class="navigation-item-button" type="button">Корзина</button>
-          </li>
-        </ul>
         <button class="navigation-item-button" href="#">Каталог товаров</button>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -42,52 +42,73 @@
       </nav>
     </header>
     <main class="main-index">
+      <h1 class="visually-hidden">Интернет-магазин электроники «Девайс»</h1>
       <section class="promo-slider">
-        <h1 class="visually-hidden">Популярные товары</h1>
-        <button class="previous" type="button"></button>
-        <img class="promo-goods-1" src="/images/index/slider-1.png" alt="Квадрокоптер с лазером">
-        <img class="promo-goods-2" src="/images/index/slider-2.png" alt="Фитнес браслет Пуабэй">
-        <img class="promo-goods-3" src="/images/index/slider-3.png" alt="Селфи палица">
-        <button class="next" type="button"></button>
-        <span class="promo-slider-number">01</span>
-        <span class="promo-slider-number">02</span>
-        <span class="promo-slider-number">03</span>
-        <h2 class="promo-slider-title">Порхает как бабочка, жалит как пчела!</h2>
-        <h2 class="promo-slider-title">Худеем правильно!</h2>
-        <h2 class="promo-slider-title">Делай селфи, как Бен Стиллер!</h2>
-        <p class="promo-slider-description">
-          Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-        </p>
-        <p class="promo-slider-description">
-          Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-        </p>
-        <p class="promo-slider-description">
-          Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-        </p>
-        <a class="promo-slider-button" href="#">Подробнее</a>
-        <ol class="slideshow-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 товар</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 товар</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 товар</span>
-            </button>
-          </li>
-        </ol>
-        <dl class="advantage-list">
-          <dd class="advantage-title">800 м</dd>
-          <dt class="advantage-description">Дальность полёта</dt>
-          <dd class="advantage-title">50 м</dd>
-          <dt class="advantage-description">Радиус поражения</dt>
-        </dl>
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <div class="controls">
+          <button class="previous" type="button">
+            <span class="visually-hidden">Предыдущий товар</span>
+          </button>
+          <button class="next" type="button">
+            <span class="visually-hidden">Следующий товар</span>
+          </button>
+        </div>
+        <div class="pagination">
+          <button type="button">
+            <span class="visually_hidden">1</span>
+          </button>
+          <button type="button">
+            <span class="visually_hidden">2</span>
+          </button>
+          <button type="button">
+            <span class="visually_hidden">3</span>
+          </button>
+        </div>
+        <div class="slide">
+          <img class="promo-goods-1" src="/images/index/slider-1.png" alt="Квадрокоптер с лазером.">
+          <span class="promo-slider-number">01</span>
+          <h3 class="promo-slider-title">Порхает как бабочка, жалит как пчела!</h3>
+          <p class="promo-slider-description">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <a class="promo-slider-button" href="#">Подробнее</a>
+          <dl class="advantage-list">
+            <dd class="advantage-title">800 м</dd>
+            <dt class="advantage-description">Дальность полёта</dt>
+            <dd class="advantage-title">50 м</dd>
+            <dt class="advantage-description">Радиус поражения</dt>
+          </dl>
+        </div>
+        <div class="slide">
+          <img class="promo-goods-2" src="/images/index/slider-2.png" alt="Фитнес браслет Пуабэй.">
+          <span class="promo-slider-number">02</span>
+          <h3 class="promo-slider-title">Худеем правильно!</h3>
+          <p class="promo-slider-description">
+            Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+          </p>
+          <a class="promo-slider-button" href="#">Подробнее</a>
+          <dl class="advantage-list">
+            <dd class="advantage-title">48 часов</dd>
+            <dt class="advantage-description">Без подзарядки</dt>
+          </dl>
+        </div>
+        <div class="slide">
+          <img class="promo-goods-3" src="/images/index/slider-3.png" alt="Селфи палица.">
+          <span class="promo-slider-number">03</span>
+          <h3 class="promo-slider-title">Делай селфи, как Бен Стиллер!</h3>
+          <p class="promo-slider-description">
+            Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+          </p>
+          <a class="promo-slider-button" href="#">Подробнее</a>
+          <dl class="advantage-list">
+            <dd class="advantage-title">8,5 м</dd>
+            <dt class="advantage-description">Длина палки</dt>
+            <dd class="advantage-title">5 кг</dd>
+            <dt class="advantage-description">Вес палки</dt>
+            <dd class="advantage-title">Карбон</dd>
+            <dt class="advantage-description">Материал</dt>
+          </dl>
+        </div>
       </section>
       <section class="goods-categories">
         <h1 class="visually-hidden">Категории товаров</h1>
