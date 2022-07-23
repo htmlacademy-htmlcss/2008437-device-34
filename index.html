@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="/styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -17,26 +18,26 @@
           </form>
         </li>
         <li class="navigation-item">
-          <a class="navigation-item-link" href="#">Войти</a>
+          <a class="navigation-item-link link" href="#">Войти</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-item-link" href="#">Сравнить</a>
+          <a class="navigation-item-link link" href="#">Сравнить</a>
         </li>
         <li class="navigation-item">
-          <button class="navigation-item-button" type="button">Корзина</button>
+          <button class="navigation-item-button link" type="button">Корзина</button>
         </li>
       </ul>
       <nav class="header-navigation">
-        <button class="navigation-item-button" href="#">Каталог товаров</button>
+        <button class="navigation-item-button second-title" href="#">Каталог товаров</button>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Доставка</a>
+            <a class="navigation-item-link second-title" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Гарантия</a>
+            <a class="navigation-item-link second-title" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Контакты</a>
+            <a class="navigation-item-link second-title" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -46,32 +47,32 @@
       <section class="promo-slider">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="controls">
-          <button class="previous" type="button">
+          <button class="previous-button" type="button">
             <span class="visually-hidden">Предыдущий товар</span>
           </button>
-          <button class="next" type="button">
+          <button class="next-button" type="button">
             <span class="visually-hidden">Следующий товар</span>
           </button>
         </div>
         <div class="pagination">
-          <button type="button">
+          <button type="dot-button">
             <span class="visually_hidden">1</span>
           </button>
-          <button type="button">
+          <button type="dot-button">
             <span class="visually_hidden">2</span>
           </button>
-          <button type="button">
+          <button type="dot-button">
             <span class="visually_hidden">3</span>
           </button>
         </div>
         <div class="slide">
           <img class="promo-goods-1" src="/images/index/slider-1.png" alt="Квадрокоптер с лазером.">
           <span class="promo-slider-number">01</span>
-          <h3 class="promo-slider-title">Порхает как бабочка, жалит как пчела!</h3>
+          <h3 class="promo-slider-title main-title">Порхает как бабочка, жалит как пчела!</h3>
           <p class="promo-slider-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a class="promo-slider-button" href="#">Подробнее</a>
+          <a class="promo-slider-button button" href="#">Подробнее</a>
           <dl class="advantage-list">
             <dd class="advantage-title">800 м</dd>
             <dt class="advantage-description">Дальность полёта</dt>
@@ -86,7 +87,7 @@
           <p class="promo-slider-description">
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
-          <a class="promo-slider-button" href="#">Подробнее</a>
+          <a class="promo-slider-button button" href="#">Подробнее</a>
           <dl class="advantage-list">
             <dd class="advantage-title">48 часов</dd>
             <dt class="advantage-description">Без подзарядки</dt>
@@ -99,7 +100,7 @@
           <p class="promo-slider-description">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
           </p>
-          <a class="promo-slider-button" href="#">Подробнее</a>
+          <a class="promo-slider-button button" href="#">Подробнее</a>
           <dl class="advantage-list">
             <dd class="advantage-title">8,5 м</dd>
             <dt class="advantage-description">Длина палки</dt>
@@ -137,18 +138,18 @@
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="services-list">
           <li class="services-item services-item-current">
-            <button class="services-button" type="button">Доставка</button>
+            <button class="services-button button-active" type="button">Доставка</button>
           </li>
           <li class="services-item">
-            <button class="services-button" type="button">Гарантия</button>
+            <button class="services-button button" type="button">Гарантия</button>
           </li>
           <li class="services-item">
-            <button class="services-button" type="button">Кредит</button>
+            <button class="services-button button" type="button">Кредит</button>
           </li>
         </ul>
         <ul class="services-promo-list">
           <li class="services-item services-item-current">
-            <h3 class="services-title">Доставка</h3>
+            <h3 class="services-title main-title">Доставка</h3>
             <p class="services-description">
               Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
@@ -156,7 +157,7 @@
             </p>
           </li>
           <li class="services-item services-item-current">
-            <h3 class="services-title">Гарантия</h3>
+            <h3 class="services-title main-title">Гарантия</h3>
             <p class="services-description">
               Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
@@ -164,7 +165,7 @@
             </p>
           </li>
           <li class="services-item services-item-current">
-            <h3 class="services-title">Кредит</h3>
+            <h3 class="services-title main-title">Кредит</h3>
             <p class="services-description">
               Залезть в долговую яму стало проще!
               Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
@@ -176,7 +177,7 @@
       <section class="company-info">
         <h2 class="visually-hidden">О компании и контакты</h2>
         <section class="about-us">
-          <h2 class="abouts-us-title">О нас</h2>
+          <h2 class="abouts-us-title main-title">О нас</h2>
           <p class="about-us-text">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
@@ -191,7 +192,7 @@
           <a class="about-us-button" href="#">Подробнее о нас</a>
         </section>
         <section class="contacts">
-          <h2 class="contacts-title">О нас</h2>
+          <h2 class="contacts-title main-title">Контакты</h2>
           <p class="contacts-text">
             Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.
           </p>
@@ -211,7 +212,7 @@
         </section>
       </section>
       <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <h2 class="subscription-title main-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">
           Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
@@ -236,14 +237,14 @@
         <div class="footer-navigation-social-wrapper">
           <nav class="footer-navigation">
             <ul class="footer-navigation-list">
-              <li class="footer-navigation-item">Доставка</li>
-              <li class="footer-navigation-item">Гарантия</li>
-              <li class="footer-navigation-item">Контакты</li>
+              <li class="footer-navigation-item second-title-white">Доставка</li>
+              <li class="footer-navigation-item second-title-white">Гарантия</li>
+              <li class="footer-navigation-item second-title-white">Контакты</li>
             </ul>
           </nav>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
+              <a class="footer-social-link footer-social-tg" href="https://t.me/htmlacademy">
                 <svg class="footer-social-logo" aria-hidden="true" focusable="false" width="24" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 1.45c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V1.45c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67 1.78 1.75 2.07 2.53 3.08 2.53h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" />
                 </svg>
@@ -251,13 +252,13 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link footer-social-tg" href="https://t.me/htmlacademy">
+              <a class="footer-social-link footer-social-yt" href="https://www.youtube.com/user/htmlacademyru">
                 <svg class="footer-social-logo" aria-hidden="true" width="18" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.79.6.84 6.75c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18l-7.68 6.92-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8C18.22.77 17.5.27 16.79.59Z" /></svg>
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link footer-social-yt" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
                 <svg class="footer-social-logo" aria-hidden="true" width="22" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.6 0H3.18C1.31 0 0 1.6 0 3.4v10.1C0 15.4 1.31 17 3.17 17h15.66c1.64 0 3.17-1.6 3.17-3.4V3.4C21.78 1.6 20.47 0 18.6 0ZM7.67 12.54V4.46L15 8.5l-7.33 4.04Z" /></svg>
                 <span class="visually-hidden">Твиттер</span>
               </a>
@@ -266,7 +267,7 @@
         </div>
         <div class="footer-phone-author-wrapper">
           <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="" href="#">
+          <a class="" href="https://htmlacademy.ru/">
             <img class="footer-author-logo" src="/images/footer/author-logo-footer.svg" alt="Логотип htmlacademy">
           </a>
         </div>
