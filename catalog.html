@@ -27,7 +27,7 @@
         </li>
       </ul>
       <nav class="header-navigation">
-        <button class="navigation-item-button" href="#">Каталог товаров</button>
+        <button class="navigation-item-button" type="button">Каталог товаров</button>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-item-link" href="#">Доставка</a>
@@ -117,13 +117,15 @@
                     <span class="control-label">Нет</span>
                   </label>
                 </li>
+              </ul>
           </fieldset>
           <button class="catalog-filter-form-button" type="submit">Показать</button>
         </form>
       </section>
       <section class="catalog-search-result">
+        <h2 class="visually-hidden">Товары с учетом фильтров</h2>
         <div class="sort-order-menu">
-          <h2 class="catalog-search-result-title">Сортировка</h2>
+          <h3 class="catalog-search-result-title">Сортировка</h3>
           <select class="select-control" aria-label="Сортировка">
             <option value="Popular">Популярные</option>
             <option value="Cheap">Сначала дешевые</option>
@@ -134,6 +136,60 @@
             <button class="scrolling-button" type="button"><span class="visually-hidden">Вниз.</span></button>
           </div>
         </div>
+        <div class="product-list-container">
+          <ul class="product-list">
+            <li class="product-card">
+              <img class="product-card-image" src="#" alt="Монопод «Любительская селфи-палка».">
+              <h3 class="product-card-title">Любительская селфи-палка</h3>
+              <p class="product-catd-price">
+                500 ₽
+              </p>
+            </li>
+            <li class="product-card">
+              <img class="product-card-image" src="#" alt="Монопод «Любительская селфи-палка».">
+              <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+              <p class="product-catd-price">
+                1500 ₽
+              </p>
+            </li>
+            <li class="product-card">
+              <img class="product-card-image" src="#" alt="Монопод «Любительская селфи-палка».">
+              <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+              <p class="product-catd-price">
+                2500 ₽
+              </p>
+            </li>
+            <li class="product-card">
+              <img class="product-card-image" src="#" alt="Монопод «Любительская селфи-палка».">
+              <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+              <p class="product-catd-price">
+                1500 ₽
+              </p>
+            </li>
+          </ul>
+       </div>
+       <button class="product-list-button-more">Загрузить еще</button>
+       <div class="pagination-container">
+        <a class="pagination-button" href="#">Назад</a>
+        <ol class="pagintaion">
+          <li class="pagination-item">
+            <a class="pagination-link" href="catalog.html">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="catalog-page-2.html">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="catalog-page-3.html">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="catalog-page-15.html">15</a>
+          </li>
+        </ol>
+        <a class="pagination-button" href="#">Вперед</a>
+       </div>
       </section>
     </main>
     <footer class="page-footer">
