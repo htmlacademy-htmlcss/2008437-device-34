@@ -11,7 +11,10 @@
         <img class="logo-header" src="/images/header/logo-header.svg" alt="Логотип «Девайс»">
       </a>
       <form class="navigation-user-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="navigation-user-form-field text-small-additional" type="search" name="searchquery" placeholder="Текст поиска">
+        <label class="navigation-user-form-label">
+          <input class="navigation-user-form-field text-small-additional" type="search" name="searchquery" placeholder="Текст поиска">
+          <span class="visually-hidden">Поиск</span>
+        </label>
         <button class="navigation-user-form-button text-small-additional" type="submit">Найти</button>
       </form>
       <ul class="navigations-user">
@@ -21,12 +24,39 @@
         <li class="navigation-item">
           <a class="navigation-item-link" href="#">Сравнить</a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-item shopping-cart">
           <button class="navigation-item-button" type="button">Корзина</button>
+          <div class="cart-popover">
+            <ul class="cart-popover-product-list">
+              <li class="cart-tooltp-product-item">
+                <p class="cart-popover-product">
+                  <img class="cart-popover-product-img" src="images/header/product-selfie-stick.jpg" width="39" height="43" alt="">
+                  <span class="cart-popover-product-text">Любительская селфи-палка</span>
+                </p>
+                <button class="cart-">
+                  <span class="visually hidden">Закрыть окно</span>
+                </button>
+              </li>
+              <li class="cart-tooltp-product-item">
+                <p class="cart-popover-product">
+                  <img class="cart-popover-product-img" src="images/header/product-professional-selfie-stick.jpg" width="39" height="43" alt="">
+                  <span class="cart-popover-product-text">Любительская селфи-палка</span>
+                </p>
+                <button class="cart-">
+                  <span class="visually hidden">Закрыть окно</span>
+                </button>
+              </li>
+            </ul>
+            <p class="cart-popover-total">
+              <span class="cart-popover-title">Товаров: 2</span>
+              <span class="cart-popover-title">Сумма: 2000 ₽</span>
+            </p>
+            <a class="cart-popover-button" href="cart.html"></a>
+          </div>
         </li>
       </ul>
       <nav class="header-navigation">
-        <button class="navigation-item-button" type="button">Каталог товаров</button>
+        <button class="navigation-item-button" type="button">Каталог товаров<span class="navigation-item-button-icon"></span></button>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-item-link" href="#">Доставка</a>
@@ -38,22 +68,28 @@
             <a class="navigation-item-link" href="#">Контакты</a>
           </li>
         </ul>
+        <ul class="dropdown-menu">
+          <li class="dropdown-menu-item">
+            <a class="dropdown-menu-link" href="virtual-reality.html">Виртуальная реальность</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a class="dropdown-menu-link" href="monopodes.html">Моноподы для селфи</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a class="dropdown-menu-link" href="action-cams.html">Экшн-камеры</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a class="dropdown-menu-link" href="fitness-trackers.html">Фитнес браслеты</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a class="dropdown-menu-link" href="smartwatches.html">Умные часы</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a class="dropdown-menu-link" href="quadcopters.html">Квадрокоптеры</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="">Моноподы для селфи</h1>
-        <ol class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог товаров</a>
-          </li><li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
-          </li>
-        </ol>
-      </header>
       <section class="catalog-filter">
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="catalog-filter-form-title">Фильтр</h2>

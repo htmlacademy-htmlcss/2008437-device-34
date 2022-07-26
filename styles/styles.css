@@ -36,7 +36,12 @@ body {
   color: #444444;
 }
 
-/* Text. titles and links */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+/* TEXT. TITLES AND LINKS */
+/* Text */
 .text-bold {
   font-weight: 700;
   line-height: 20px;
@@ -56,6 +61,7 @@ body {
   color: #000000;
 }
 
+/* Titles */
 .main-title {
   padding: 0;
   margin: 0;
@@ -94,6 +100,7 @@ body {
   color: #000000;
 }
 
+/* Links */
 .link {
   font-style: normal;
   font-weight: 400;
@@ -109,7 +116,7 @@ body {
   color: #000000;
 }
 
-/* Buttons */
+/* BUTTONS */
 .button {
   position: relative;
   display: block;
