@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="logo-header-link" href="index.html">
         <img class="logo-header" src="/images/header/logo-header.svg" alt="Логотип «Девайс»">
       </a>
@@ -56,43 +56,46 @@
         </li>
       </ul>
       <nav class="header-navigation">
-        <button class="navigation-item-button" type="button">Каталог товаров<span class="navigation-item-button-icon"></span></button>
+        <button class="navigation-item-button" type="button">Каталог товаров</button>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Доставка</a>
+            <a class="navigation-link" href="#">Каталог товаров<span class="navigation-link-icon"></span></a>
+            <ul class="subcatalog-list">
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="virtual-reality.html">Виртуальная реальность</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="monopodes.html">Моноподы для селфи</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="action-cams.html">Экшн-камеры</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="fitness-trackers.html">Фитнес браслеты</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="smartwatches.html">Умные часы</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="quadcopters.html">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Гарантия</a>
+            <a class="navigation-link" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Контакты</a>
+            <a class="navigation-link" href="#">Гарантия</a>
           </li>
-        </ul>
-        <ul class="dropdown-menu">
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="virtual-reality.html">Виртуальная реальность</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="monopodes.html">Моноподы для селфи</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="action-cams.html">Экшн-камеры</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="fitness-trackers.html">Фитнес браслеты</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="smartwatches.html">Умные часы</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="quadcopters.html">Квадрокоптеры</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазин электроники «Девайс»</h1>
-      <section class="promo-slider">
+      <section class="promo-slider container">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="controls">
           <button class="previous-button" type="button">
@@ -159,7 +162,7 @@
           </dl>
         </div>
       </section>
-      <section class="goods-categories">
+      <section class="goods-categories container">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category-list">
           <li class="category-item">
@@ -222,7 +225,13 @@
           </li>
         </ul>
       </section>
-      <section class="company-info">
+      <section class="special-offer container">
+        <h2 class="visually-hidden"><span class="visually-hidden">Дополнительная услуга</span></h2>
+        <p class="special-offer-text">
+          Доставим редкий товар под заказ
+        </p>
+      </section>
+      <section class="company-info container">
         <h2 class="visually-hidden">О компании и контакты</h2>
         <section class="about-us">
           <h2 class="abouts-us-title main-title">О нас</h2>
@@ -259,7 +268,7 @@
           <a class="contacts-button" href="contact_us.html">Напишите нам</a>
         </section>
       </section>
-      <section class="subscription">
+      <section class="subscription container">
         <h2 class="subscription-title main-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">
           Еженедельный дайджест с обзорами новинок,

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="logo-header-link" href="index.html">
         <img class="logo-header" src="/images/header/logo-header.svg" alt="Логотип «Девайс»">
       </a>
@@ -19,7 +19,10 @@
       </form>
       <ul class="navigations-user">
         <li class="navigation-item">
-          <a class="navigation-item-link" href="#">Войти</a>
+          <a class="navigation-item-link" href="#">Коля Петухов</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Выйти</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-item-link" href="#">Сравнить</a>
@@ -56,41 +59,58 @@
         </li>
       </ul>
       <nav class="header-navigation">
-        <button class="navigation-item-button" type="button">Каталог товаров<span class="navigation-item-button-icon"></span></button>
+        <button class="navigation-item-button" type="button">Каталог товаров</button>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Доставка</a>
+            <a class="navigation-link" href="#">Каталог товаров<span class="navigation-link-icon"></span></a>
+            <ul class="subcatalog-list">
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="virtual-reality.html">Виртуальная реальность</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="monopodes.html">Моноподы для селфи</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="action-cams.html">Экшн-камеры</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="fitness-trackers.html">Фитнес браслеты</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="smartwatches.html">Умные часы</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="quadcopters.html">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Гарантия</a>
+            <a class="navigation-link" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Контакты</a>
+            <a class="navigation-link" href="#">Гарантия</a>
           </li>
-        </ul>
-        <ul class="dropdown-menu">
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="virtual-reality.html">Виртуальная реальность</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="monopodes.html">Моноподы для селфи</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="action-cams.html">Экшн-камеры</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="fitness-trackers.html">Фитнес браслеты</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="smartwatches.html">Умные часы</a>
-          </li>
-          <li class="dropdown-menu-item">
-            <a class="dropdown-menu-link" href="quadcopters.html">Квадрокоптеры</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-catalog">
+      <header class="inner-header container">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <span class="breadcrumbs-link">Моноподы для селфи</span>
+          </li>
+        </ol>
+      </header>
       <section class="catalog-filter">
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="catalog-filter-form-title">Фильтр</h2>
@@ -224,10 +244,10 @@
             </li>
           </ul>
        </div>
-       <button class="product-list-button-more">Загрузить еще</button>
+       <button class="product-list-button-more" type="button">Загрузить еще</button>
        <div class="pagination-container">
         <a class="pagination-button" href="#">Назад</a>
-        <ol class="pagintaion">
+        <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link" href="catalog.html">1</a>
           </li>
@@ -243,7 +263,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="catalog-page-15.html">15</a>
           </li>
-        </ol>
+        </ul>
         <a class="pagination-button" href="#">Вперед</a>
        </div>
       </section>

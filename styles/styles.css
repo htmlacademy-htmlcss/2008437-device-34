@@ -24,20 +24,33 @@
 }
 
 /* COMMON STYLES */
+html {
+  height: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 100%;
+  margin: 0;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  background-color: #ffffff;
 }
 
 *, ::before, ::after {
   box-sizing: border-box;
+}
+
+.container {
+  width: 1240px;
+  padding: 0 40px;
+  margin: 0 auto;
 }
 
 /* TEXT. TITLES AND LINKS */
