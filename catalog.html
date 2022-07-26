@@ -90,12 +90,34 @@
         </ul>
       </nav>
     </header>
+    <main class="main-catalog">
       <section class="catalog-filter">
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="catalog-filter-form-title">Фильтр</h2>
-          <input class="" type="range">
-          <!-- Доработаю на этапе создания форм-->
-          <fieldset class="catalog-filter-form-parameter">
+          <fieldset class="catalog-filter-group">
+            <legend class="">Стоимость</legend>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 119px;">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную стоимость</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную стоимость</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="50" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 40px;">
+                  </label>
+                </div>
+              </div>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
             <legend class="">Цвет</legend>
               <ul class="catalog-filter-form-list">
                 <li class="catalog-list-item">
@@ -135,7 +157,7 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="catalog-filter-form-parameter">
+          <fieldset class="catalog-filter-group">
             <legend class="">Bluetooth</legend>
               <ul class="catalog-filter-form-list">
                 <li class="catalog-list-item">
@@ -158,9 +180,8 @@
         </form>
       </section>
       <section class="catalog-search-result">
-        <h2 class="visually-hidden">Товары с учетом фильтров</h2>
         <div class="sort-order-menu">
-          <h3 class="catalog-search-result-title">Сортировка</h3>
+          <h2 class="catalog-search-result-title">Сортировка</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="Popular">Популярные</option>
             <option value="Cheap">Сначала дешевые</option>
