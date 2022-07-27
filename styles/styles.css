@@ -264,8 +264,8 @@ img {
   list-style-type: none;
 }
 
-.navigation-item + .navigation-item {
-  margin-left: 45px;
+.navigation-item:not(:last-child) {
+  margin-right: 45px;
 }
 
 .navigation-item:first-child {
@@ -278,9 +278,14 @@ img {
   text-decoration-line: none;
 }
 
+/* MAIN PAGE */
 /* Section - Slider */
 .promo-slider {
   margin-bottom: 70px;
+}
+
+.slide:nth-child(5), .slide:nth-child(6) {
+  display: none;
 }
 
 /* Section – Categories */
@@ -318,17 +323,126 @@ img {
   color: #000000;
 }
 
+/* Section – Services */
+.services {
+  display: flex;
+  min-height: 391px;
+  background: linear-gradient(180deg, white 102px, #F0F0F0 102px);
+  margin-bottom: 70px;
+}
+
+.service-description {
+  display: none;
+}
+
+.service-description-active {
+  display: block;
+}
+
 /* Section – Special offer */
 .special-offer {
   margin-bottom: 70px;
 }
 
 /* Section – Company info */
-.special-offer {
+.company-info {
+  display: flex;
   margin-bottom: 70px;
 }
 
-/* Section – Subscription container */
-.special-offer {
+/* Section – Subscription */
+.subscription {
   margin-bottom: 60px;
+}
+
+.subscription-title-description-wrapper {
+  display: flex;
+}
+
+.subscription-form-wrapper {
+  display: flex;
+}
+/* MONOPODES PAGE */
+.catalog-wrapper {
+  display: flex;
+}
+
+.sort-order-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-list-container {
+  padding: 70px 40px 78px;
+  margin-bottom: 44px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 44px;
+  column-gap: 40px;;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-list-button-more {
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+
+.pagination-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.pagination {
+  display: flex;
+}
+/* FOOTER */
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 119px 1fr 183px 1fr;
+  grid-template-rows: 1fr 35px 1fr 62px 1fr;
+}
+
+.logo-footer {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.footer-address {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.footer-navigation {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.footer-social-list {
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+.footer-phone {
+  grid-column: 5/6;
+  grid-row: 3/5;
+}
+
+.footer-author-logo-link {
+  grid-column: 5/6;
+  grid-row: 5/6;
 }
