@@ -248,6 +248,15 @@ img {
   padding: 0;
 }
 
+.cart-popover-product {
+  display: flex;
+}
+
+.cart-popover-total {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Navigation menu */
 .navigation-list {
   display: flex;
@@ -285,12 +294,28 @@ img {
   margin-bottom: 70px;
 }
 
+.slide {
+  display: flex;
+  background: linear-gradient(180deg, #ffe17f 150px, white 150px);
+}
+
 .slide:nth-child(5), .slide:nth-child(6) {
   display: none;
 }
 
+.advantage-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 12px;
+}
+
+.advantage-description {
+  order: 1;
+}
 /* Section – Categories */
-.services {
+.goods-categories {
   margin-bottom: 70px;
 }
 
@@ -326,10 +351,13 @@ img {
 
 /* Section – Services */
 .services {
-  display: flex;
   min-height: 391px;
   background: linear-gradient(180deg, white 102px, #F0F0F0 102px);
   margin-bottom: 70px;
+}
+
+.services-wrapper {
+  display: flex;
 }
 
 .service-description {
