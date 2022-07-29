@@ -181,10 +181,27 @@ img {
 /* HEADER */
 /* Common Layout */
 .page-header {
+  width: 1160px;
+  padding: 0 0;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+
+.container-header {
+  margin: 0 auto;
+}
+
+.page-header-wrapper {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   row-gap: 30px;
-  padding-top: 15px;
+  padding: 0 60px;
+  padding-bottom: 23px;
+  background: linear-gradient(180deg,white 20px, #ffe17f 20px);
+}
+
+.logo-header-link {
+  display: block;
 }
 
 /* User Menu */
@@ -196,13 +213,84 @@ img {
 }
 
 .navigation-user-form {
+  display: flex;
   width: 517px;
+  height: 40px;
   margin-right: 26px;
+}
+
+.navigation-user-form-field {
+  width: 359px;
+  height: 40px;
+  padding: 0;
+  padding-left: 46px;
+  border: 2px solid black;
+  border-radius: 50px 0 0 50px;
+  font-style: inherit;
+  color: inherit;
+  background: url("/images/header/icons/search_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 10px;
+}
+
+.navigation-user-form-field::placeholder {
+  opacity: 1;
+}
+
+.navigation-user-form-field:focus {
+  outline: none;
+}
+
+.navigation-user-form-field:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px #ffe17f,
+    0 0 0 4px #af4fff
+  ;
+}
+
+.navigation-user-form-field:disabled {
+  opacity: 0.3;
+}
+
+.navigation-user-form-button {
+  display: block;
+  margin-left: -2px;
+  width: 160px;
+  height: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+}
+
+.navigation-user-form-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navigation-user-form-button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-user-form-button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px #ffe17f,
+    0 0 0 4px #af4fff;
+  ;
+}
+
+.navigation-user-form-button:disabled {
+  opacity: 0.3;
 }
 
 .navigation-user-list {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -228,18 +316,32 @@ img {
   text-decoration-line: none;
 }
 
+.user-logged {
+  display: none;
+}
+
 .user-icon {
   padding-left: 27px;
   margin-right: 28px;
+  background: url("../images/header/icons/user-icon.svg") no-repeat;
+  background-position: 0 9px;
 }
 
 .compare-icon {
   padding-left: 22px;
   margin-right: 36px;
+  background: url("../images/header/icons/compare_icon.svg") no-repeat;
+  background-position: 0 9px;
 }
 
 .cart-icon {
+  font: inherit;
+  padding: 0;
   padding-left: 25px;
+  display: block;
+  background: url("../images/header/icons/cart_icon.svg") no-repeat;
+  background-position: 0 7px;
+  border: none;
 }
 
 /* Cart Popover */
@@ -253,7 +355,7 @@ img {
   padding: 0;
 }
 
-.cart-popover-product {
+.cart-popover-product-wrapper {
   display: flex;
 }
 
@@ -265,22 +367,33 @@ img {
 /* Navigation menu */
 .navigation-list {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
 .subcatalog-list {
-  display: none;
+  display: block;
 }
 
 .navigation-list {
+  min-height: 50px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+/* .navigation-list:focus-within .subcatalog-list {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffe17f;
+} */
+
 .navigation-item:not(:last-child) {
   margin-right: 45px;
+  min-width: 127px;
+  text-align: left;
 }
 
 .navigation-item:first-child {
@@ -291,6 +404,48 @@ img {
   display: block;
   color: #000000;
   text-decoration-line: none;
+}
+
+.navigation-link-button {
+  display: block;
+  position: relative;
+  min-width: 293px;
+  padding: 14px 0;
+}
+
+.navigation-link-icon {
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  content: "";
+}
+
+.navigation-link-icon::before, .navigation-link-icon::after {
+  position: absolute;
+  content: "";
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.navigation-link-icon::before {
+  width: 2px;
+  height: 16px;
+  margin: auto auto;
+  background-color:#000000;
+  opacity: 0.3;
+}
+
+.navigation-link-icon::after {
+  width: 16px;
+  height: 2px;
+  margin: auto auto;
+  background-color:#000000;
+  opacity: 0.3;
 }
 
 /* MAIN PAGE */
