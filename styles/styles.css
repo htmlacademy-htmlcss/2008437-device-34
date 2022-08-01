@@ -830,7 +830,7 @@ img {
   width: 20px;
   height: 60px;
   border: none;
-  background-image: url(/images/index/icons/slider_arrow.svg);
+  background-image: url("images/index/icons/slider_arrow.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   cursor: pointer;
@@ -1033,27 +1033,27 @@ img {
 }
 
 .category-link-vr::before {
-  background-image: url(/images/index/icons/virtual_reality.svg);
+  background-image: url("images/index/icons/virtual_reality.svg");
 }
 
 .category-link-selfie::before {
-  background-image: url(/images/index/icons/monopodes.svg);
+  background-image: url("images/index/icons/monopodes.svg");
 }
 
 .category-link-actioncams::before {
-  background-image: url(/images/index/icons/action_cams.svg);
+  background-image: url("images/index/icons/action_cams.svg");
 }
 
 .category-link-fittrackers::before {
-  background-image: url(/images/index/icons/fitness_trackers.svg);
+  background-image: url("images/index/icons/fitness_trackers.svg");
 }
 
 .category-link-smartwatches::before {
-  background-image: url(/images/index/icons/smart_watches.svg);
+  background-image: url("images/index/icons/smart_watches.svg");
 }
 
 .category-link-quadcopters::before {
-  background-image: url(/images/index/icons/quadrokopters.svg);
+  background-image: url("images/index/icons/quadrokopters.svg");
 }
 
 .category-link:hover {
