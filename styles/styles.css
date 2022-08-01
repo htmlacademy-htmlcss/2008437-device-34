@@ -1567,7 +1567,7 @@ img {
   background-color: #ffc700;
 }
 
-.footer-social-item:focus-visible {
+.footer-social-item:focus-within {
   outline: none;
   box-shadow:
     0 0 0 2px #444444,
