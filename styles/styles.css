@@ -1197,7 +1197,7 @@ img {
   line-height: 23px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: url("/images/index/icons/delivery.svg") no-repeat 35px 39px,
+  background: url("../images/index/icons/delivery.svg") no-repeat 35px 39px,
               linear-gradient(90deg, #ffe17f 125px, #f0f0f0 125px);
   cursor: pointer;
 }
