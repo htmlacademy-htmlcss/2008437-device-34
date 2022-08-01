@@ -1589,21 +1589,21 @@ img {
 .footer-social-tg::after {
   width: 13px;
   height: 11px;
-  background-image: url("/images/footer/icons/telegram.svg");
+  background-image: url("../images/footer/icons/telegram.svg");
   background-size: 13px 11px;
 }
 
 .footer-social-yt::after {
   width: 16px;
   height: 11px;
-  background-image: url("/images/footer/icons/youtube.svg");
+  background-image: url("../images/footer/icons/youtube.svg");
   background-size: 16px 11px;
 }
 
 .footer-social-tw::after {
   width: 15px;
   height: 14px;
-  background-image: url("/images/footer/icons/twitter.svg");
+  background-image: url("../images/footer/icons/twitter.svg");
   background-size: 15px 14px;
 }
 
