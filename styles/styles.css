@@ -1373,6 +1373,10 @@ img {
 .inner-header-title {
   margin: 0;
   margin-bottom: 16px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
   color: #000000;
 }
 
@@ -1384,7 +1388,10 @@ img {
   padding: 0;
 }
 
-.breadcrumbs-item:not(:first-child) {
+
+.breadcrumbs-item  {
+  margin-right: 16px;
+  line-height: 19px;
 }
 
 .breadcrumbs-item:not(:first-child)::before {
@@ -1399,12 +1406,6 @@ img {
   background-position: center left;
   opacity: 0.2;
 }
-
-.breadcrumbs-item  {
-  margin-right: 16px;
-  line-height: 19px;
-}
-
 
 .breadcrumbs-link {
   font-weight: 400;
@@ -1435,12 +1436,77 @@ img {
   display: flex;
 }
 
-/* Search Results */
+.catalog-wrapper {
+  background-color:#f0f0f0;
+}
+
+/* Main Catalog - Filter */
+
+.catalog-filter {
+  width: 320px;
+  padding: 25px 60px 0 60px;
+}
+
+.catalog-filter-form {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 35px;
+}
+
+.catalog-filter-form-title {
+  padding-bottom: 25px;
+  margin: 0;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-group-name {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  border-top: 2px solid #000000;
+}
+
+/* Main Catalog - Sort Menu */
 
 .sort-order-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
+
+.select-control {
+  background-color: transparent;
+  border: none;
+  font: inherit;
+}
+
+.catalog-search-result-title {
+  margin: 0;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Main Catalog - Search Results */
 
 .product-list-container {
   padding: 70px 40px 78px;
