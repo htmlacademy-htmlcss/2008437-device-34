@@ -208,53 +208,73 @@
           <section class="catalog-search-result">
             <div class="sort-order-menu">
               <h2 class="catalog-search-result-title">Сортировка:</h2>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="Popular">Популярные</option>
-                <option value="Cheap">Сначала дешевые</option>
-                <option value="Expensive">Сначала дорогие</option>
-              </select>
+              <div class="select-control-wrapper">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="Popular">Популярные</option>
+                  <option value="Cheap">Сначала дешевые</option>
+                  <option value="Expensive">Сначала дорогие</option>
+                </select>
+              </div>
               <div class="scrolling-buttons">
-                <button class="scrolling-button" type="button"><span class="visually-hidden">Вверх.</span></button>
-                <button class="scrolling-button" type="button"><span class="visually-hidden">Вниз.</span></button>
+                <button class="scrolling-button" type="button">
+                  <svg class="scrolling-button-img" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m6 0 5.5 10H.5" fill="none"/>
+                  </svg>
+                  <span class="visually-hidden">Вверх.</span>
+                </button>
+                <button class="scrolling-button" type="button">
+                  <svg class="scrolling-button-img" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m6 0 5.5 10H.5" fill="none"/>
+                  </svg>
+                  <span class="visually-hidden">Вниз.</span>
+                </button>
               </div>
             </div>
             <div class="product-list-container">
               <ul class="product-list">
                 <li class="product-card">
-                  <img class="product-card-image" src="images/catalog/product-1.jpg" alt="Монопод «Любительская селфи-палка».">
-                  <div class="product-card-description">
-                    <h3 class="product-card-title">Любительская селфи-палка</h3>
-                    <span class="product-catd-price">
-                      500 ₽
-                    </span>
-                  </div>
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="images/catalog/product-1.jpg" width="360" height="380" alt="Монопод «Любительская селфи-палка».">
+                    <div class="product-card-description">
+                      <h3 class="product-card-title">Любительская селфи-палка</h3>
+                      <span class="product-card-price">
+                        500 ₽
+                      </span>
+                    </div>
+                  </a>
                 </li>
                 <li class="product-card">
-                  <img class="product-card-image" src="images/catalog/product-2.jpg" alt="Монопод «Профессиональная селфи-палка».">
-                  <div class="product-card-description">
-                    <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-                    <span class="product-catd-price">
-                      1500 ₽
-                    </span>
-                  </div>
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="images/catalog/product-2.jpg" width="360" height="380" alt="Монопод «Профессиональная селфи-палка».">
+                    <div class="product-card-description">
+                      <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                      <span class="product-card-price">
+                        1500 ₽
+                      </span>
+                    </div>
+                  </a>
                 </li>
                 <li class="product-card">
-                  <img class="product-card-image" src="images/catalog/product-3.jpg" alt="Монопод «Непотопляемая селфи-палка».">
-                  <div class="product-card-description">
-                    <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-                    <span class="product-catd-price">
-                      2500 ₽
-                    </span>
-                  </div>
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="images/catalog/product-3.jpg" width="360" height="380" alt="Монопод «Непотопляемая селфи-палка».">
+                    <div class="product-card-description">
+                      <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                      <span class="product-card-price">
+                        2500 ₽
+                      </span>
+                    </div>
+                  </a>
                 </li>
                 <li class="product-card">
-                  <img class="product-card-image" src="images/catalog/product-4.jpg" alt="Монопод «Следуй за мной».">
-                  <div class="product-card-description">
-                    <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-                    <span class="product-catd-price">
-                      1500 ₽
-                    </span>
-                  </div>
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="images/catalog/product-4.jpg" width="360" height="380" alt="Монопод «Следуй за мной».">
+                    <div class="product-card-description">
+                      <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                      <span class="product-card-price">
+                        1500 ₽
+                      </span>
+                    </div>
+                  </a>
                 </li>
               </ul>
               <button class="product-list-button-more" type="button">Загрузить еще</button>

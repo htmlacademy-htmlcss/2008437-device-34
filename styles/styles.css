@@ -297,7 +297,7 @@ img {
   border-radius: 50px 0 0 50px;
   font-style: inherit;
   color: inherit;
-  background: url("/images/header/icons/search_icon.svg");
+  background: url("../images/header/icons/search_icon.svg");
   background-repeat: no-repeat;
   background-position: 16px 10px;
 }
@@ -1226,7 +1226,7 @@ img {
 }
 
 .special-offer-text:hover {
-  background: url("/images/index/icons/delivery.svg") no-repeat 35px 39px,
+  background: url("../images/index/icons/delivery.svg") no-repeat 35px 39px,
               linear-gradient(90deg, #ffc700 125px, #f0f0f0 125px);
 }
 
@@ -1490,9 +1490,60 @@ img {
 }
 
 .select-control {
+  width: 141px;
+  padding-right: 32px;
+  padding: 0;
   background-color: transparent;
   border: none;
   font: inherit;
+  appearance: none;
+  background-image: url("../images/catalog/icons/sorting_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: top 12px right 11px;
+}
+
+.scrolling-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60px;
+  height: 30px;
+}
+
+.scrolling-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.scrolling-button:last-child .scrolling-button-img {
+  transform: rotate(180deg);
+}
+
+.scrolling-button path {
+  fill: black;
+  opacity: 0.2;
+}
+
+.scrolling-button:hover path {
+  fill: black;
+  opacity: 0.5;
+}
+
+.scrolling-button:active path {
+  fill: black;
+  opacity: 1;
+}
+
+.scrolling-button:focus-visible {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #f0f0f0,
+  0 0 0 4px #af4fff;
 }
 
 .catalog-search-result-title {
@@ -1510,7 +1561,7 @@ img {
 
 .product-list-container {
   padding: 70px 40px 78px;
-  margin-bottom: 44px;
+  background: #ffffff;
 }
 
 .product-list {
@@ -1520,6 +1571,8 @@ img {
   row-gap: 44px;
   column-gap: 40px;;
   margin: 0 auto;
+  padding: 0;
+  margin-bottom: 44px;
 }
 
 .product-card {
@@ -1527,13 +1580,61 @@ img {
   flex-direction: column;
 }
 
+.product-card-link {
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-image {
+  margin-bottom: 32px;
+}
+
+.product-card-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background: rgba(240, 240, 240, 0.8);
+}
+
+.product-card-link::after {
+  content: "Подробнее";
+  display: block;
+  width: 220px;
+  height: 40px;
+  padding: 10px 5px;
+  position: absolute;
+  top: 180px;
+  left: 75px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: linear-gradient(transparent 16px, #ffe17f 16px, #ffe17f 24px, transparent 24px)
+}
+
 .product-card-description {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
+.product-card-title {
+  margin: 0;
+  max-width: 230px;
+}
+
+.product-card-price {
+  color: #444444;
+}
 .product-list-button-more {
   margin: 0 auto;
   margin-bottom: 44px;
