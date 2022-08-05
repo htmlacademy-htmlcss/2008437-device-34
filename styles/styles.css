@@ -1569,7 +1569,7 @@ img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 44px;
-  column-gap: 40px;;
+  column-gap: 40px;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 44px;
@@ -1578,19 +1578,43 @@ img {
 .product-card {
   display: flex;
   flex-direction: column;
-}
-
-.product-card-link {
   position: relative;
-  color: #000000;
-  text-decoration: none;
+  cursor: pointer;
 }
 
-.product-card-image {
-  margin-bottom: 32px;
+.product-card:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 380px;
+  background: rgba(240, 240, 240, 0.8);
+  z-index: 1;
 }
 
-.product-card-link::before {
+.product-card:hover::after {
+  content: "Подробнее";
+  display: block;
+  width: 220px;
+  height: 40px;
+  padding: 10px 5px;
+  position: absolute;
+  top: 180px;
+  left: 75px;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: linear-gradient(transparent 16px, #ffe17f 16px, #ffe17f 24px, transparent 24px);
+  z-index: 2;
+}
+
+.product-card:active::before {
   content: "";
   display: block;
   position: absolute;
@@ -1601,7 +1625,7 @@ img {
   background: rgba(240, 240, 240, 0.8);
 }
 
-.product-card-link::after {
+.product-card:active::after {
   content: "Подробнее";
   display: block;
   width: 220px;
@@ -1617,7 +1641,61 @@ img {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: linear-gradient(transparent 16px, #ffe17f 16px, #ffe17f 24px, transparent 24px)
+  background: linear-gradient(transparent 16px, #ffc700 16px, #ffc700 24px, transparent 24px)
+}
+
+.product-card:hover .product-card-title {
+  opacity: 0.6;
+}
+
+.product-card:active .product-card-description {
+  opacity: 0.3;
+}
+
+.product-card-new:hover .product-card-description {
+  opacity: 0.6;
+}
+
+.product-card-new:active .product-card-description {
+  opacity: 0.3;
+}
+
+.product-card:focus-visible {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 4px #af4fff;
+}
+
+.product-card-link {
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-link-new::before {
+  content: "new";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  padding-top: 22px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.product-card-image {
+  margin-bottom: 32px;
 }
 
 .product-card-description {
@@ -1635,22 +1713,83 @@ img {
 .product-card-price {
   color: #444444;
 }
+
 .product-list-button-more {
-  margin: 0 auto;
+  width: 100%;
+  min-height: 55px;
   margin-bottom: 44px;
+  padding: 15px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 3px solid #e5e5e5;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.product-list-button-more:hover {
+  border: 3px solid #000000;
+}
+
+.product-list-button-more:active {
+  border: 3px solid #000000;
+  opacity: 0.3;
+}
+
+.product-list-button-more:focus-visible {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 4px #af4fff;
+}
+
+.product-list-button-more:disabled {
+  border: 3px solid #E5E5E5;
+  opacity: 0.3;
+  cursor: default;
 }
 
 /* Pagination */
 
 .pagination-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
+  background-color:#ebebeb;
+}
+
+.pagination-button {
+  padding: 25px 25px;
+  text-decoration: none;
 }
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
+.pagination-item {
+  width:
+}
+
+.pagination-link {
+  padding: 10px 16px;
+  color: #444444;
+  opacity: 0.3;
+  text-decoration: none;
+}
 /* FOOTER */
 
 /* Layouts and common styles */
