@@ -684,8 +684,11 @@ img {
 }
 
 .navigation-link {
+  display: inline-block;
   color: #000000;
   text-decoration-line: none;
+  text-indent:-0.2em;;
+  direction:rtl;
 }
 
 .navigation-link:hover {
@@ -1415,11 +1418,11 @@ img {
   text-decoration: none;
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-item:not(:last-child):hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-item:not(:last-child):active {
   opacity: 0.3;
 }
 
@@ -1491,8 +1494,8 @@ img {
 
 .select-control {
   width: 141px;
-  padding-right: 32px;
   padding: 0;
+  padding-right: 31px;
   background-color: transparent;
   border: none;
   font: inherit;
@@ -1500,6 +1503,9 @@ img {
   background-image: url("../images/catalog/icons/sorting_arrow.svg");
   background-repeat: no-repeat;
   background-position: top 12px right 11px;
+  text-align: left;
+  text-indent: -2px;
+  cursor: pointer;
 }
 
 .scrolling-buttons {
@@ -1749,7 +1755,7 @@ img {
 }
 
 .product-list-button-more:disabled {
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
   opacity: 0.3;
   cursor: default;
 }
@@ -1769,27 +1775,66 @@ img {
   text-decoration: none;
 }
 
+.pagination-button:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-button:active {
+  color:rgba(0, 0, 0, 0.3)
+}
+
+.pagination-button:focus-visible {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 4px #af4fff;
+}
+
 .pagination {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  max-width: 500px;
+  justify-content: flex-start;
+  max-width: 400px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .pagination-item {
-  width:
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .pagination-link {
-  padding: 10px 16px;
+  display: block;
+  padding: 5px 0;
+  font-size: 16px;
   color: #444444;
   opacity: 0.3;
   text-decoration: none;
+  text-align: center;
 }
+
+.pagination-link-active {
+  opacity: 0.6;
+}
+
+.pagination-link:hover {
+  opacity: 1;
+}
+
+.pagination-link:active {
+  opacity: 0.1;
+}
+
+.pagination-item:focus-within {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ebebeb,
+  0 0 0 4px #af4fff;
+}
+
 /* FOOTER */
 
 /* Layouts and common styles */
@@ -1868,6 +1913,7 @@ img {
 
 .footer-navigation-list {
   display: grid;
+  min-height: 32px;
   grid-template-columns: repeat(3, max-content);
   grid-auto-columns: max-content;
   grid-auto-flow: row;
@@ -1876,11 +1922,14 @@ img {
   margin: 0 auto;
   gap: 35px;
   list-style-type: none;
-  margin-bottom: 62px;
+  margin-bottom: 60px;
 }
 
 .footer-navigation-link {
+  display: inline-block;
   padding-bottom: 4px;
+  text-indent:-0.2em;;
+  direction:rtl;
 }
 
 .footer-navigation-link:hover {
