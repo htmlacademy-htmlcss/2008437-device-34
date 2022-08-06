@@ -1362,6 +1362,96 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+}
+
+.subscription-form {
+  display: flex;
+  width: 810px;
+}
+
+.subscription-form-label {
+  width: 558px;
+  border: 0;
+
+  background-color: transparent;
+}
+
+.subscription-form-field {
+  width: 100%;
+  height: 100%;
+  padding: 11px 0 11px 16px;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  border-bottom: 3px solid #c4c4c4;
+  background-color: transparent;
+}
+
+.subscription-form-field::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  opacity: 0.5;
+}
+
+.subscription-form-field:focus-visible {
+  outline: none;
+  background-color: #dcdcdc;
+}
+
+.subscription-form-field:invalid {
+  border-bottom: 3px solid #ff3d3d;
+}
+
+.subscription-form-field:disabled {
+  opacity: 0.3;
+}
+
+.subscription-form-button {
+  min-width: 252px;
+  min-height: 57px;
+  padding: 15px 33px;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  border: 3px solid #c4c4c4;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.subscription-form-button:hover:enabled {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+.subscription-form-button:active:enabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-form-button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px #f0f0f0,
+    0 0 0 4px #af4fff;
+}
+
+.subscription-form-button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.subscription-form-text {
+  padding-left: 32px;
+  background: url("../images/index/icons/form_tick.svg");
+  background-repeat: no-repeat;
+  background-position: center left 2px;
 }
 
 /* MONOPODES PAGE */
@@ -1443,7 +1533,7 @@ img {
   background-color:#f0f0f0;
 }
 
-/* Main Catalog - Filter */
+/* Filters – Common Styles */
 
 .catalog-filter {
   width: 320px;
@@ -1481,6 +1571,69 @@ img {
   padding-top: 12px;
   border-top: 2px solid #000000;
 }
+
+/* First filter */
+.range-scale {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 7px;
+  background-color: #dcdcdc;
+
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.toggle-min {
+  left: 0;
+}
+
+.toggle-max {
+  left: 119px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 168px;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-filter-label {
+  display: flex;
+  font: inherit;
+}
+
+.range-input {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+}
+
 
 /* Main Catalog - Sort Menu */
 
