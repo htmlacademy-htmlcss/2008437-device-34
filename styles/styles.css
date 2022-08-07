@@ -1570,6 +1570,7 @@ img {
   margin-bottom: 20px;
   padding-top: 12px;
   border-top: 2px solid #000000;
+  color: #000000;
 }
 
 /* First filter */
@@ -1649,30 +1650,80 @@ img {
 .control {
   position: relative;
   display: block;
+  width: max-content;
   line-height: 20px;
   padding-left: 36px;
 }
 
-.control-mark {
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:disabled {
+  opacity: 0.1;
+}
+
+.control-mark, .control-mark-radio {
   position: absolute;
   top: 0;
   left: 1px;
   width: 20px;
   height: 20px;
-  border: 2px solid #000000;
+  border: 2px solid #cccccc;
   border-radius: 3px;
   margin-right: 16px;
+  outline: none;
+}
+
+.control-mark:focus-visible::before, .control-mark:focus-visible::before, .control-mark-radio:focus-visible::before, .control-mark-radio:focus-visible::before {
+  content: "";
+  outline: none;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #af4fff;
+  background-color: transparent;
+  transform: translate(-5px, -5px);
+
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  border: 2px solid #000000;
+}
+
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background-image: url("../images/catalog/icons/form_tick.svg");
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .control-mark-radio {
-  position: absolute;
-  top: 0;
-  left: 1px;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #000000;
   border-radius: 50%;
-  margin-right: 16px;
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio {
+  border: 2px solid #000000;
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio::after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+  content: "";
 }
 
 .control-label {
@@ -1705,6 +1756,25 @@ img {
   text-align: left;
   text-indent: -2px;
   cursor: pointer;
+}
+
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px #f0f0f0,
+    0 0 0 4px #af4fff;
+}
+
+.select-control:disabled {
+  opacity: 0.1;
 }
 
 .scrolling-buttons {
