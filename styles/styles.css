@@ -288,7 +288,11 @@ img {
   margin-right: 26px;
 }
 
+.navigation-user-form-label {
+
+}
 .navigation-user-form-field {
+  position: relative;
   width: 359px;
   height: 40px;
   padding: 0;
@@ -304,15 +308,20 @@ img {
 
 .navigation-user-form-field::placeholder {
   opacity: 1;
+  font: inherit;
+  color: #000000;
 }
-
-.navigation-user-form-field:focus {
+.navigation-user-form-field {
   outline: none;
 }
 
-.navigation-user-form-field:focus-visible {
+.navigation-user-form-label:focus-within {
   outline-offset: 2px;
   outline: 2px solid #af4fff;
+}
+
+.navigation-user-form-field:focus-visible {
+  outline: none;
 }
 
 .navigation-user-form-field:disabled {
@@ -321,6 +330,7 @@ img {
 
 .navigation-user-form-button {
   display: block;
+  position: relative;
   margin-left: -2px;
   width: 160px;
   height: 100%;
@@ -329,6 +339,7 @@ img {
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
   cursor: pointer;
+  outline: none;
 }
 
 .navigation-user-form-button:hover {
@@ -341,9 +352,15 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.navigation-user-form-button:focus-visible {
-  outline-offset: 2px;
-  outline: 2px solid #af4fff;
+.navigation-user-form-button:focus-visible::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 168px;
+  height: 48px;
+  border: 2px solid #af4fff;
+  background-color: transparent;
 }
 
 .navigation-user-form-button:disabled {
