@@ -1966,7 +1966,7 @@ img {
   text-decoration: none;
 }
 
-.product-card-link-new::before {
+.product-card-new .product-card-link::before {
   content: "new";
   position: absolute;
   top: 27px;
@@ -2379,7 +2379,7 @@ img {
 }
 
 .modal-container-close {
-  display: block;
+  display: none;
 }
 
 .modal {
