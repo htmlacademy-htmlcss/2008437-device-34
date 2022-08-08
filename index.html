@@ -103,6 +103,9 @@
       <h1 class="visually-hidden">Интернет-магазин электроники «Девайс»</h1>
       <section class="promo-slider">
         <h2 class="visually-hidden">Популярные товары</h2>
+        <!-- Отсутствует JavaScript. При нажатии на кнопку слева от картинки удаляется класс .active-slide
+        у текущего слайда и переносится на предыдущий слайд. При нажатии на правую стрелку аналогично слайды
+        сменяются на следующий-->
         <div class="controls">
           <button class="previous-button" type="button">
             <span class="visually-hidden">Предыдущий товар</span>
@@ -111,6 +114,8 @@
             <span class="visually-hidden">Следующий товар</span>
           </button>
         </div>
+        <!-- Отсутствует JavaScript. При нажатии на одну из кнопок аналогично стрелкам меняется класс .active-slide,
+           а также удаляется у кнопки класс .dot-button-active и переносится на кнопку на которую был произведен клик -->
         <div class="pagination-slider">
           <button class="dot-button dot-button-active" type="button">
             <span class="visually-hidden">1</span>
@@ -122,7 +127,7 @@
             <span class="visually-hidden">3</span>
           </button>
         </div>
-        <div class="slide">
+        <div class="slide active-slide">
           <img class="promo-goods" src="images/index/slider-1.png" width="560" height="560" alt="Квадрокоптер с лазером.">
           <div class="slide-description-wrapper">
             <span class="promo-slider-number">01</span>
@@ -141,33 +146,37 @@
         </div>
         <div class="slide">
           <img class="promo-goods" src="images/index/slider-2.png" width="560" height="560" alt="Фитнес браслет Пуабэй.">
-          <span class="promo-slider-number">02</span>
-          <h3 class="promo-slider-title">Худеем правильно!</h3>
-          <p class="promo-slider-description">
-            Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-          </p>
-          <a class="promo-slider-button button" href="#">Подробнее</a>
-          <dl class="advantage-list">
-            <dt class="advantage-description">Без подзарядки</dt>
-            <dd class="advantage-title">48 часов</dd>
-          </dl>
+          <div class="slide-description-wrapper">
+            <span class="promo-slider-number">02</span>
+            <h3 class="promo-slider-title main-title">Худеем правильно!</h3>
+            <p class="promo-slider-description">
+              Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+            </p>
+            <a class="promo-slider-button button" href="#">Подробнее</a>
+            <dl class="advantage-list advantage-list-small">
+              <dt class="advantage-description">Без подзарядки</dt>
+              <dd class="advantage-title">48 часов</dd>
+            </dl>
+          </div>
         </div>
         <div class="slide">
           <img class="promo-goods" src="images/index/slider-3.png" width="560" height="560" alt="Селфи палица.">
-          <span class="promo-slider-number">03</span>
-          <h3 class="promo-slider-title">Делай селфи, как Бен Стиллер!</h3>
-          <p class="promo-slider-description">
-            Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-          </p>
-          <a class="promo-slider-button button" href="#">Подробнее</a>
-          <dl class="advantage-list">
-            <dt class="advantage-description">Длина палки</dt>
-            <dd class="advantage-title">8,5 м</dd>
-            <dt class="advantage-description">Вес палки</dt>
-            <dd class="advantage-title">5 кг</dd>
-            <dt class="advantage-description">Материал</dt>
-            <dd class="advantage-title">Карбон</dd>
-          </dl>
+          <div class="slide-description-wrapper">
+            <span class="promo-slider-number">03</span>
+            <h3 class="promo-slider-title main-title">Делай селфи,<br> как Бен Стиллер!</h3>
+            <p class="promo-slider-description">
+              Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+            </p>
+            <a class="promo-slider-button button" href="#">Подробнее</a>
+            <dl class="advantage-list advantage-list-big">
+              <dt class="advantage-description">Длина палки</dt>
+              <dd class="advantage-title">8,5 м</dd>
+              <dt class="advantage-description">Вес палки</dt>
+              <dd class="advantage-title">5 кг</dd>
+              <dt class="advantage-description">Материал</dt>
+              <dd class="advantage-title">Карбон</dd>
+            </dl>
+          </div>
         </div>
       </section>
       <section class="goods-categories container">
