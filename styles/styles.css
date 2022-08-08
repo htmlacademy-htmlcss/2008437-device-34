@@ -2362,3 +2362,369 @@ img {
     0 0 0 2px #444444,
     0 0 0 4px #af4fff;
 }
+
+/* MODAL WINDOW */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+  z-index: 2;
+}
+
+.modal-container-close {
+  display: block;
+}
+
+.modal {
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+  border: 10px solid #000000;
+  width: 920px;
+  min-height: 568px;
+  padding: 62px 80px;
+}
+
+.modal-form-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+/* Modal close button */
+
+.modal-close-button {
+  position: relative;
+  width: 26px;
+  height: 100%;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../images/catalog/icons/close_form.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.modal-close-button:focus-visible {
+  outline: solid 3px #83b3d3;
+}
+
+.modal-close-button:hover {
+  outline: none;
+}
+
+.modal-close-button:active {
+  outline: none;
+}
+
+.modal-close-button:active:before {
+}
+
+.modal-close-button:active:after {
+}
+
+/* Modal Form – Common Styles */
+
+.modal-container-form {
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.modal-field-group-wrapper {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.modal-field-group {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.modal-field-group + .modal-field-group {
+  margin-left: 40px;
+}
+
+.modal-input-label {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  min-height: 60px;
+  padding: 0;
+  padding-top: 15px;
+  padding-left: 19px;
+  padding-bottom: 14px;
+  font: inherit;
+  color: #000000;
+  border: none;
+  background-color: #f2f2f2;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+.modal-input-description {
+  width: 540px;
+}
+
+.modal-input[type="text"]::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font: inherit;
+}
+
+.modal-input:hover {
+  background: #e6e6e6;
+}
+
+.modal-input:focus-visible {
+  outline: 3px solid #83b3d3;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-input:focus:not(:focus-visible) {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-input:active {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 3px #000000 inset;
+          box-shadow: 0 0 0 3px #000000 inset;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal-form-button {
+  width: 200px;
+}
+
+/* Input buttons */
+
+.modal-input-button-wrapper {
+  position: relative;
+}
+
+.modal-input-minus-button {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  padding: 12px 6px;
+  top: 13px;
+  left: 13px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-input-minus-button::after {
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  left: 6px;
+  top: 12px;
+  background-color: #000000;
+  opacity: 0.3;
+  border: none;
+  content: "";
+}
+
+.modal-input-minus-button:hover::after {
+  opacity: 1;
+}
+
+.modal-input-minus-button:focus-visible {
+  opacity: 1;
+  -webkit-box-shadow: 0 0 0 3px #83b3d3 inset;
+          box-shadow: 0 0 0 3px #83b3d3 inset;
+  outline: none;
+  border-radius: 4px;
+}
+
+.modal-input-minus-button:hover::after {
+  opacity: 0.2;
+}
+
+.modal-input-plus-button {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  padding: 12px 6px;
+  top: 13px;
+  right: 14px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-input-plus-button::before {
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  top: 12px;
+  right: 6px;
+  background-color: #000000;
+  opacity: 0.3;
+  border: none;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  content: "";
+}
+
+.modal-input-plus-button::after {
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  left: 6px;
+  top: 12px;
+  background-color: #000000;
+  opacity: 0.3;
+  border: none;
+  content: "";
+}
+
+.modal-input-plus-button:hover::before {
+  opacity: 1;
+}
+
+.modal-input-plus-button:hover::after {
+  opacity: 1;
+}
+
+.modal-input-plus-button:focus-visible {
+  opacity: 1;
+  -webkit-box-shadow: 0 0 0 3px #83b3d3 inset;
+          box-shadow: 0 0 0 3px #83b3d3 inset;
+  outline: none;
+  border-radius: 4px;
+}
+
+.modal-input-plus-button:active::before {
+  opacity: 0.2;
+}
+
+.modal-input-plus-button:active::after {
+  opacity: 0.2;
+}
+
+.modal-input-quantity[type="number"] {
+  padding-left: 45px;
+  padding-right: 45px;
+  text-align: center;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+/* Tooltip */
+
+.modal-field-group-quantity > .modal-input-label {
+  display: block;
+  position: relative;
+}
+
+.modal-form-tooltip {
+  display: block;
+  position: absolute;
+  top: -3px;
+  right: 60px;
+}
+
+.tooltip-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ffe17f;
+  border: 0;
+}
+
+.tooltip-toggle:before {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  width: 2px;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+}
+
+.tooltip-toggle:after {
+  position: absolute;
+  top: 14px;
+  left: 9px;
+  width: 8px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(-90deg);
+  content: "";
+}
+
+.modal-form-tooltip-text {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: -87px;
+  z-index: 1;
+  background-color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 20px 17px;
+  width: 200px;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-form-tooltip-text:after {
+  content: "";
+  background-image: url("../images/catalog/icons/tooltip_triangle.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 6px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip-toggle:hover + .modal-form-tooltip-text,
+.tooltip-toggle:focus + .modal-form-tooltip-text{
+  display: block;
+}
