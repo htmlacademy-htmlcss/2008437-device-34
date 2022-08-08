@@ -481,6 +481,10 @@ img {
   display: none;
 }
 
+.navigation-user-link:hover + .popover-open {
+  display: block;
+}
+
 .cart-popover {
   min-width: 320px;
   position: absolute;
@@ -620,6 +624,7 @@ img {
 /* Button and wrapper */
 
 .cart-popover-button-wrapper {
+  display: block;
   padding: 20px;
   margin: 0;
 }
