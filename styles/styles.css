@@ -952,8 +952,7 @@ img {
 
 .slide-description-wrapper {
   width: 560px;
-  margin-top: 120px;
-  margin-bottom: 38px;
+  margin-top: 122px;
 }
 
 .promo-slider-number {
@@ -1077,6 +1076,7 @@ img {
 
 .category-link-selfie::before {
   background-image: url("../images/index/icons/monopodes.svg");
+  background-position: center bottom;
 }
 
 .category-link-actioncams::before {
@@ -1114,7 +1114,6 @@ img {
 .services {
   min-height: 391px;
   background: linear-gradient(180deg, white 102px, #f0f0f0 102px);
-  margin-bottom: 70px;
 }
 
 .services-wrapper {
@@ -1124,7 +1123,7 @@ img {
 }
 
 .services-list {
-  width: 280px;
+  width: 287px;
   margin: 0;
   padding: 64px 0;
   list-style-type: none;
@@ -1182,12 +1181,12 @@ img {
 
 .service-delivery, .service-warranty, .service-credit {
   display: none;
-  width:694px;
-  padding-right: 242px;
+  width:695px;
+  padding-right: 240px;
 }
 
 .service-delivery {
-  display: block;
+  display: none;
   background-image: url("../images/index/delivery.svg");
   background-repeat: no-repeat;
   background-position: center right;
@@ -1207,6 +1206,10 @@ img {
   background-image: url("../images/index/credit.svg");
   background-repeat: no-repeat;
   background-position: top right;
+}
+
+.services-description-active {
+  display: block;
 }
 
 .service-title {
@@ -1233,10 +1236,10 @@ img {
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: url("../images/index/icons/delivery.svg") no-repeat 35px 39px,
+  background: url("../images/index/icons/delivery.svg") no-repeat 38px 35px,
               linear-gradient(90deg, #ffe17f 125px, #f0f0f0 125px);
   cursor: pointer;
 }
@@ -1264,7 +1267,7 @@ img {
 }
 
 .special-offer-text:hover {
-  background: url("../images/index/icons/delivery.svg") no-repeat 35px 39px,
+  background: url("../images/index/icons/delivery.svg") no-repeat 38px 35px,
               linear-gradient(90deg, #ffc700 125px, #f0f0f0 125px);
 }
 
@@ -1318,23 +1321,25 @@ img {
 .about-us-list {
   padding: 0;
   margin: 0;
+  line-height: 20px;
   margin-bottom: 30px;
   list-style-type: none;
 }
 .about-us-item {
   position: relative;
-  padding-left: 34px;
+  padding-left: 35px;
 }
 
 .about-us-item:not(:last-child) {
   margin-bottom: 19px;
 }
+
 .about-us-item::before {
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 0;
+    left: 2px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -1343,7 +1348,7 @@ img {
 }
 
 .about-us-button {
-  width: 240px;
+  width: 270px;
 }
 
 .contacts-subtitle {
@@ -1378,18 +1383,22 @@ img {
 .subscription-title-description-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 144px;
 }
 
 .subscription-title {
   width: 365px;
+  margin: 0;
+  padding-top: 1px;
+  padding-left: 7px;
+  margin-right: 242px;
 }
 
 .subscription-description {
-  width: 560px;
+  max-width: 560px;
   margin: 0;
+  padding-top: 8px;
   text-align: left;
 }
 
@@ -1408,7 +1417,6 @@ img {
 .subscription-form-label {
   width: 558px;
   border: 0;
-
   background-color: transparent;
 }
 
@@ -2151,7 +2159,6 @@ img {
 
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   /* grid-template-columns: 239px 119px 444px 183px 175px;
   grid-template-rows: 1fr 35px 1fr 62px 1fr; */
@@ -2159,8 +2166,13 @@ img {
 
 /* Logo and adress */
 
+.logo-address-wrapper {
+  margin-right: 119px;
+}
+
 .footer-address {
-  max-width: 250px;
+  min-width: 239px;
+  max-width: 239px;
 }
 
 .logo-footer-link {
@@ -2208,7 +2220,8 @@ img {
 /* Navigation and socials */
 
 .navigation-social-wrapper {
-  max-width: 500px;
+  max-width: 444px;
+  margin-right: 184px;
 }
 
 .footer-navigation {
@@ -2226,7 +2239,7 @@ img {
   margin: 0 auto;
   gap: 35px;
   list-style-type: none;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .footer-navigation-link {
@@ -2665,7 +2678,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-/* Tooltip */
+/* Form tooltip */
 
 .modal-field-group-quantity > .modal-input-label {
   display: block;
