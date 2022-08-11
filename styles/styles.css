@@ -241,15 +241,6 @@ img {
   background: linear-gradient(180deg,white 40px, #ffe17f 40px);
 }
 
-.page-header-wrapper {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  row-gap: 30px;
-  padding: 0 60px;
-  padding-bottom: 20px;
-  background: linear-gradient(180deg,white 20px, #ffe17f 20px);
-}
-
 /* Logo */
 
 .logo-header-link {
@@ -470,6 +461,7 @@ img {
 .navigation-user-item-cart:focus-within .popover-open {
   display: block
 }
+
 /* CART POPOVER */
 
 /* Modal windows */
@@ -681,7 +673,7 @@ img {
 
 .navigation-item {
   position: relative;
-  padding: 15px 0 14px 0;
+  padding: 15px 0 0px 0;
   min-height: 50px;
 }
 
@@ -690,7 +682,7 @@ img {
   min-width: 293px;
   padding: 14px 0;
   margin-right: 275px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navigation-item:not(:last-child) {
@@ -774,20 +766,20 @@ img {
 .subcatalog-list {
   display: none;
   position: absolute;
-  grid-template-columns: 222px 181px auto;
+  grid-template-columns: 222px 181px 218px;
   grid-template-rows: repeat(3, auto);
   column-gap: 30px;
   row-gap: 18px;
   grid-auto-flow: column;
-  z-index: -1;
   width: 1160px;
-  min-height: 120px;
+  min-height: 160px;
   top: 50px;
   left: -60px;
   margin: 0;
   padding: 14px 60px 40px 60px;
   list-style-type: none;
   background-color: #ffe17f;
+  z-index: 2;
 }
 
 .subcatalog-item:last-child {
@@ -1536,7 +1528,7 @@ img {
   padding: 6px 0;
   width: 4px;
   height: 7px;
-  margin-right: 16px;
+  margin-right: 12px;
   background: url("../images/catalog/icons/breadcrumbs-separator.svg");
   background-repeat: no-repeat;
   background-position: center left;
@@ -1580,31 +1572,32 @@ img {
 
 .catalog-filter {
   width: 320px;
-  padding: 25px 60px 0 60px;
+  padding: 25px 40px 0 60px;
 }
 
 .catalog-filter-form {
   display: grid;
   grid-template-rows: repeat(5, auto);
-  gap: 35px;
+  gap: 32px;
 }
 
 .catalog-filter-form-title {
-  padding-bottom: 25px;
   margin: 0;
+  margin-bottom: 25px;
   font-family: "Raleway";
   font-weight: 800;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
 }
 
 .catalog-filter-group {
-  border: none;
+  width: 200px;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .catalog-filter-group-name {
@@ -1614,9 +1607,18 @@ img {
   padding-top: 12px;
   border-top: 2px solid #000000;
   color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-indent: -1px;
 }
 
 /* First filter */
+.range {
+  padding-top: 8px;
+}
+
 .range-scale {
   position: relative;
   width: 100%;
@@ -1684,10 +1686,16 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 3px;
+  line-height: 20px;
 }
 
 .catalog-list-item:not(:last-child) {
   margin-bottom: 17px;
+}
+
+.catalog-filter-form-list-radio .catalog-list-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .control {
@@ -1773,6 +1781,11 @@ img {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+}
+
+/* Filter form button */
+.catalog-filter-form-button {
+  width: 220px;
 }
 
 /* Main Catalog - Sort Menu */
@@ -2025,11 +2038,17 @@ img {
 
 .product-card-title {
   margin: 0;
-  max-width: 230px;
+  max-width: 210px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
 }
 
 .product-card-price {
   color: #444444;
+  line-height: 110%;
 }
 
 .product-list-button-more {
