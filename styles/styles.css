@@ -2104,8 +2104,8 @@ img {
 .pagination-button {
   padding: 25px 25px;
   text-decoration: none;
-  text-indent:-0.2em;;
-  direction:rtl;
+  text-indent: -0.2em;;
+  direction: rtl;
 }
 
 .pagination-button:hover {
