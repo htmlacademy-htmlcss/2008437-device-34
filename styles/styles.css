@@ -661,7 +661,7 @@ img {
 .navigation-list {
   position: relative;
   display: flex;
-  justify-content: space-between;;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   min-height: 50px;
@@ -674,7 +674,6 @@ img {
 
 .navigation-item {
   position: relative;
-
   min-height: 50px;
 }
 
@@ -1817,7 +1816,7 @@ img {
   background-repeat: no-repeat;
   background-position: top 12px right 11px;
   text-align: left;
-  text-indent: -2px;
+  text-indent: -1px;
   cursor: pointer;
 }
 
