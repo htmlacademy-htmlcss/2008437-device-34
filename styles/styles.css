@@ -2550,11 +2550,16 @@ img {
 }
 
 .modal-input-name + .modal-input-comment  {
-  display: none;
+
+}
+
+.modal-input-comment {
+  display: flex;
+  opacity: 0;
 }
 
 .modal-input-name:placeholder-shown + .modal-input-comment  {
-  display: block;
+  opacity: 1;
 }
 
 .modal-input:placeholder-shown {
@@ -2586,12 +2591,8 @@ img {
   box-shadow:inset 0 0 0 2px #ff3d3d;
 }
 
-.modal-input-comment {
-  display: none;
-}
-
 .modal-input[type="email"]:invalid + .modal-input-comment {
-  display: flex;
+  opacity: 1;
   color: #ff3d3d;
 }
 
