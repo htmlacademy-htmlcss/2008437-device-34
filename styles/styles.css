@@ -1584,7 +1584,7 @@ img {
 
 .catalog-filter-form {
   display: grid;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(5, minmax(auto, auto));
   gap: 33px;
 }
 
@@ -1709,7 +1709,7 @@ img {
 .control {
   position: relative;
   display: block;
-  width: max-content;
+  max-width: 185px;
   line-height: 20px;
   padding-left: 36px;
 }
