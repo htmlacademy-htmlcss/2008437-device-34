@@ -2188,8 +2188,6 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  /* grid-template-columns: 239px 119px 444px 183px 175px;
-  grid-template-rows: 1fr 35px 1fr 62px 1fr; */
 }
 
 /* Logo and adress */
@@ -2547,10 +2545,6 @@ img {
   background-image: url("../images/index/icons/modal_form/icon_email.svg");
   background-repeat: no-repeat;
   background-position: top 24px right 20px;
-}
-
-.modal-input-name + .modal-input-comment  {
-
 }
 
 .modal-input-comment {
