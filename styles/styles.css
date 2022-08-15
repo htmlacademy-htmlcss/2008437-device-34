@@ -1393,7 +1393,7 @@ img {
 }
 
 .subscription-description {
-  max-width: 560px;
+  max-width: 550px;
   margin: 0;
   padding-top: 8px;
   text-align: left;
@@ -1450,6 +1450,7 @@ img {
 
 .subscription-form-button {
   min-width: 252px;
+  max-width: 300px;
   min-height: 57px;
   padding: 15px 33px;
   font-family: "Raleway";
@@ -1468,7 +1469,7 @@ img {
 .subscription-form-button:hover:enabled {
   background-color: #000000;
   color: #ffffff;
-  border: none;
+  border-color: #000000;
 }
 
 .subscription-form-button:active:enabled {
@@ -1807,16 +1808,16 @@ img {
 .select-control {
   width: 141px;
   padding: 0;
-  padding-right: 31px;
+  /* padding-right: 28px; */
   background-color: transparent;
   border: none;
   font: inherit;
+  text-indent: -1.5px;
   appearance: none;
   background-image: url("../images/catalog/icons/sorting_arrow.svg");
   background-repeat: no-repeat;
   background-position: top 12px right 11px;
   text-align: left;
-  text-indent: -1px;
   cursor: pointer;
 }
 
