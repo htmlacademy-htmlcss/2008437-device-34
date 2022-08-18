@@ -370,6 +370,8 @@ img {
   list-style-type: none;
 }
 
+/* User Menu – Items */
+
 .navigation-user-item {
   margin-bottom: 5px;
 }
@@ -394,6 +396,8 @@ img {
 .navigation-user-item-hidden .navigation-user-link {
   display: none;
 }
+
+/* User Menu – Links */
 
 .navigation-user-link {
   color: #000000;
@@ -465,7 +469,7 @@ img {
 
 /* CART POPOVER */
 
-/* Modal windows */
+/* Cart Popover – Modal window */
 
 .popover-open {
   display: none;
@@ -495,7 +499,7 @@ img {
   background-image: url("../images/header/icons/popover-triangle.svg");
 }
 
-/* Product List */
+/* Cart Popover – Product List */
 
 .cart-popover-product-list {
   list-style-type: none;
@@ -593,7 +597,7 @@ img {
   ;
 }
 
-/* Total sum and quantity */
+/* Cart Popover – Total sum and quantity */
 
 .cart-popover-total {
   display: flex;
@@ -611,7 +615,7 @@ img {
   color: white;
 }
 
-/* Button and wrapper */
+/* Cart Popover – Button and wrapper */
 
 .cart-popover-button-wrapper {
   display: block;
@@ -673,6 +677,8 @@ img {
   z-index: 2;
 }
 
+/* Navigation menu – Items */
+
 .navigation-item {
   position: relative;
   min-height: 50px;
@@ -699,6 +705,8 @@ img {
   display: block;
   padding: 15px 0;
 }
+
+/* Navigation menu – Links */
 
 .navigation-link {
   display: inline-block;
@@ -729,7 +737,7 @@ img {
   border-bottom: solid 2px black;
 }
 
-/* Submenu button */
+/* Navigation menu – Submenu button */
 
 .navigation-link-icon {
   display: block;
@@ -838,7 +846,7 @@ img {
   margin: 0 auto;
 }
 
-/* Control buttons */
+/* Slider – Control buttons */
 
 .controls {
   position: absolute;
@@ -933,7 +941,7 @@ img {
   background-color: #000000;
 }
 
-/* Slides */
+/* Slider – Slides */
 
 .slide {
   display: none;
@@ -1622,6 +1630,7 @@ img {
 }
 
 /* First filter */
+
 .range {
   padding-top: 8px;
 }
@@ -1792,6 +1801,7 @@ img {
 }
 
 /* Filter form button */
+
 .catalog-filter-form-button {
   width: 220px;
 }
