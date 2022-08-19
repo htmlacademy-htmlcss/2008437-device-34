@@ -311,10 +311,10 @@ img {
   font: inherit;
   color: #000000;
 }
+
 .navigation-user-form-field {
   outline: none;
 }
-
 
 .navigation-user-form-field:focus-visible {
   outline: none;
@@ -368,7 +368,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  flex-grow: 1;
   width: 497px;
   margin: 0;
   padding: 0;
@@ -377,14 +376,33 @@ img {
 
 /* User Menu – Items */
 
+/* delete .navigation-user-item-login {
+  padding-right: 28px;
+  margin-right: auto;
+}
 
-.navigation-user-item-login {
+.navigation-user-item-login + .navigation-user-item-login {
+  padding-right: 0;
   margin-right: 28px;
 }
 
-.navigation-user-item-logout {
+*/
+
+.navigation-user-item-login:first-child {
   margin-right: auto;
+}
+
+.navigation-user-item-login {
+  margin-right: 26px;
+}
+
+.navigation-user-item-logout {
+  margin-right: 26px;
   opacity: 0.3;
+}
+
+.navigation-user-item-hidden {
+  display: none;
 }
 
 .navigation-user-item-compare {
@@ -393,10 +411,19 @@ img {
 
 .navigation-user-item-cart {
   position: relative;
+  margin-right: 20px;
 }
 
-.navigation-user-item-hidden .navigation-user-link {
-  display: none;
+.navigation-user-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.navigation-user-item:nth-child(8) {
+  margin-right: 0;
+}
+
+.navigation-user-item:last-child {
+  margin-right: 0;
 }
 
 /* User Menu – Links */
@@ -1256,15 +1283,16 @@ img {
   line-height: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: url("../images/index/icons/delivery.svg") no-repeat 38px 35px,
+  background: url("../images/index/icons/delivery.svg") no-repeat 38px 50%,
               linear-gradient(90deg, #ffe17f 125px, #f0f0f0 125px);
   cursor: pointer;
 }
 
 .special-offer-text::before {
   position: absolute;
-  top: 30px;
+  top: 50%;
   right: 42px;
+  transform: translateY(-50%);
   content: "";
   width: 40px;
   height: 40px;
@@ -1274,7 +1302,8 @@ img {
 
 .special-offer-text::after {
   position: absolute;
-  top: 44px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 61px;
   content: "";
   width: 2px;
@@ -1284,7 +1313,7 @@ img {
 }
 
 .special-offer-text:hover {
-  background: url("../images/index/icons/delivery.svg") no-repeat 38px 35px,
+  background: url("../images/index/icons/delivery.svg") no-repeat 38px 50%,
               linear-gradient(90deg, #ffc700 125px, #f0f0f0 125px);
 }
 
@@ -1397,10 +1426,10 @@ img {
   background-color:#f0f0f0;
 }
 
-.subscription-title-description-wrapper {
+.subscription-title-wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 144px;
 }
 
@@ -1415,7 +1444,7 @@ img {
 .subscription-description {
   max-width: 550px;
   margin: 0;
-  padding-top: 8px;
+  padding-top: 10px;
   text-align: left;
 }
 
@@ -1432,7 +1461,8 @@ img {
 }
 
 .subscription-form-label {
-  width: 558px;
+  min-width: 250px;
+  flex-grow: 1;
   border: 0;
   background-color: transparent;
 }
@@ -1470,7 +1500,6 @@ img {
 
 .subscription-form-button {
   min-width: 252px;
-  max-width: 300px;
   min-height: 57px;
   padding: 15px 33px;
   font-family: "Raleway";
@@ -1539,12 +1568,14 @@ img {
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
+  margin-bottom: -15px;
   padding: 0;
 }
 
 
 .breadcrumbs-item  {
   margin-right: 16px;
+  margin-bottom: 15px;
   line-height: 19px;
 }
 
@@ -1830,7 +1861,7 @@ img {
 .select-control {
   width: 141px;
   padding: 0;
-  /* padding-right: 28px; */
+  padding-right: 28px;
   background-color: transparent;
   border: none;
   font: inherit;
@@ -2269,7 +2300,12 @@ img {
 /* Navigation and socials */
 
 .navigation-social-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 444px;
+  min-height: 125px;
   margin-right: 184px;
 }
 
@@ -2319,15 +2355,22 @@ img {
 }
 
 .footer-social-list {
-  display: grid;
-  grid-template-columns: repeat(3, 40px);
-  grid-auto-columns: 40px;
-  grid-auto-flow: column;
-  gap: 15px;
-  width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: -15px;
   list-style-type: none;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-social-item:nth-child(8n) {
+  margin-right: 0;
 }
 
 .footer-social-item:focus-within {
