@@ -2062,6 +2062,7 @@ img {
   position: relative;
   color: #000000;
   text-decoration: none;
+  background: linear-gradient(#f0f0f0 380px, white 380px);
 }
 
 .product-card-new .product-card-link::before {
