@@ -301,7 +301,7 @@ img {
   border-radius: 50px 0 0 50px;
   font-style: inherit;
   color: inherit;
-  background: url("../images/header/icons/search_icon.svg");
+  background: url("../images/header/icons/search-icon.svg");
   background-repeat: no-repeat;
   background-position: 16px 50%;
 }
@@ -460,7 +460,7 @@ img {
 
 .navigation-user-item-compare > .navigation-user-link {
   padding-left: 22px;
-  background: url("../images/header/icons/compare_icon.svg") no-repeat;
+  background: url("../images/header/icons/compare-icon.svg") no-repeat;
   background-position: 0 50%;
 }
 
@@ -468,7 +468,7 @@ img {
   position: relative;
   font: inherit;
   padding-left: 43px;
-  background: url("../images/header/icons/cart_icon.svg") no-repeat;
+  background: url("../images/header/icons/cart-icon.svg") no-repeat;
   background-position: 14px 40%;
   border: none;
 }
@@ -892,7 +892,7 @@ img {
   width: 20px;
   height: 60px;
   border: none;
-  background-image: url("../images/index/icons/slider_arrow.svg");
+  background-image: url("../images/index/icons/slider-arrow.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   cursor: pointer;
@@ -1115,7 +1115,7 @@ img {
 }
 
 .category-link-vr::before {
-  background-image: url("../images/index/icons/virtual_reality.svg");
+  background-image: url("../images/index/icons/virtual-reality.svg");
 }
 
 .category-link-selfie::before {
@@ -1124,15 +1124,15 @@ img {
 }
 
 .category-link-actioncams::before {
-  background-image: url("../images/index/icons/action_cams.svg");
+  background-image: url("../images/index/icons/action-cams.svg");
 }
 
 .category-link-fittrackers::before {
-  background-image: url("../images/index/icons/fitness_trackers.svg");
+  background-image: url("../images/index/icons/fitness-trackers.svg");
 }
 
 .category-link-smartwatches::before {
-  background-image: url("../images/index/icons/smart_watches.svg");
+  background-image: url("../images/index/icons/smart-watches.svg");
 }
 
 .category-link-quadcopters::before {
@@ -1539,7 +1539,7 @@ img {
 
 .subscription-form-text {
   padding-left: 32px;
-  background: url("../images/index/icons/form_tick.svg");
+  background: url("../images/index/icons/form-tick.svg");
   background-repeat: no-repeat;
   background-position: center left 2px;
 }
@@ -1867,7 +1867,7 @@ img {
   font: inherit;
   text-indent: -1.5px;
   appearance: none;
-  background-image: url("../images/catalog/icons/sorting_arrow.svg");
+  background-image: url("../images/catalog/icons/sorting-arrow.svg");
   background-repeat: no-repeat;
   background-position: top 12px right 11px;
   text-align: left;
@@ -2496,7 +2496,7 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
-  z-index: 2;
+  z-index: 3;
 }
 
 .modal-container-open {
@@ -2531,7 +2531,7 @@ img {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  background-image: url("../images/catalog/icons/close_form.svg");
+  background-image: url("../images/index/icons/modal_form/close-form.svg");
   background-repeat: no-repeat;
   background-position: center right;
 }
@@ -2603,13 +2603,13 @@ img {
 }
 
 .modal-input-name {
-  background-image: url("../images/index/icons/modal_form/icon_name.svg");
+  background-image: url("../images/index/icons/modal_form/icon-name.svg");
   background-repeat: no-repeat;
   background-position: top 24px right 20px;
 }
 
 .modal-input-email {
-  background-image: url("../images/index/icons/modal_form/icon_email.svg");
+  background-image: url("../images/index/icons/modal_form/icon-email.svg");
   background-repeat: no-repeat;
   background-position: top 24px right 20px;
 }
@@ -2663,6 +2663,7 @@ img {
 
 .modal-form-button {
   width: 200px;
+  max-width: 500px;
 }
 
 /* Input plus/minus buttons */
@@ -2833,7 +2834,7 @@ input::-webkit-inner-spin-button {
 
 .modal-form-tooltip-text:after {
   content: "";
-  background-image: url("../images/catalog/icons/tooltip_triangle.svg");
+  background-image: url("../images/catalog/icons/tooltip-triangle.svg");
   background-repeat: no-repeat;
   width: 14px;
   height: 6px;
