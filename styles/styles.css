@@ -2305,7 +2305,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   max-width: 444px;
-  min-height: 125px;
+  min-height: 127px;
   margin-right: 184px;
 }
 
@@ -2324,7 +2324,6 @@ img {
   margin: 0 auto;
   gap: 35px;
   list-style-type: none;
-  margin-bottom: 55px;
 }
 
 .footer-navigation-link {
