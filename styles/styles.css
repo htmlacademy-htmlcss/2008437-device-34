@@ -1833,7 +1833,7 @@ img {
   left: 3px;
   width: 10px;
   height: 10px;
-  background-image: url("../images/catalog/icons/form_tick.svg");
+  background-image: url("../images/catalog/icons/form-tick.svg");
   background-repeat: no-repeat;
   content: "";
 }
