@@ -287,7 +287,6 @@ img {
   flex-grow: 1;
 }
 
-
 .navigation-user-form-label:focus-within {
   outline-offset: 2px;
   outline: 2px solid #af4fff;
@@ -378,18 +377,6 @@ img {
 }
 
 /* User Menu – Items */
-
-/* delete .navigation-user-item-login {
-  padding-right: 28px;
-  margin-right: auto;
-}
-
-.navigation-user-item-login + .navigation-user-item-login {
-  padding-right: 0;
-  margin-right: 28px;
-}
-
-*/
 
 .navigation-user-item-login:first-child {
   margin-right: auto;
@@ -695,6 +682,7 @@ img {
 }
 
 /* Navigation menu */
+
 .header-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -738,7 +726,6 @@ img {
   color: #000000;
   text-decoration-line: none;
   text-indent: -0.2em;
-  ;
   direction: rtl;
   padding: 15px 0 14px 0;
 }
@@ -816,6 +803,10 @@ img {
 
 .subcatalog-wrapper:focus-within .subcatalog-list {
   display: grid;
+}
+
+.subcatalog-wrapper:focus-within .navigation-link:focus-visible {
+  z-index: 4;
 }
 
 .subcatalog-wrapper:focus-within .navigation-link-icon::before {
@@ -1590,7 +1581,6 @@ img {
   padding: 0;
 }
 
-
 .breadcrumbs-item {
   margin-right: 16px;
   margin-bottom: 15px;
@@ -1856,12 +1846,12 @@ img {
   top: -2px;
 }
 
-.control-input:focus+.control-mark::before {
+.control-input:focus + .control-mark::before {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
-.control-input:focus+.control-mark-radio::before {
+.control-input:focus + .control-mark-radio::before {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -2054,27 +2044,6 @@ img {
   display: block;
 }
 
-/*
-.product-card:hover::after {
-  content: "Подробнее";
-  display: block;
-  width: 220px;
-  height: 40px;
-  padding: 10px 5px;
-  position: absolute;
-  top: 180px;
-  left: 75px;
-  font-family: "Raleway";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  background: linear-gradient(transparent 16px, #ffe17f 16px, #ffe17f 24px, transparent 24px);
-  z-index: 2;
-}
-*/
 .product-card:active::before {
   content: "";
   display: block;
@@ -2085,27 +2054,6 @@ img {
   height: 380px;
   background: rgba(240, 240, 240, 0.8);
 }
-
-/*
-.product-card:active::after {
-  content: "Подробнее";
-  display: block;
-  width: 220px;
-  height: 40px;
-  padding: 10px 5px;
-  position: absolute;
-  top: 180px;
-  left: 75px;
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  background: linear-gradient(transparent 16px, #ffc700 16px, #ffc700 24px, transparent 24px);
-}
-*/
 
 .product-card:hover .product-card-title {
   opacity: 0.6;
@@ -2122,21 +2070,6 @@ img {
 .product-card-new:active .product-card-description {
   opacity: 0.3;
 }
-
-/*
-.product-card:focus {
-  outline: none;
-  box-shadow:
-    0 0 0 2px #ffffff,
-    0 0 0 4px #af4fff;
-}
-
-.product-card:focus-visible {
-  outline: none;
-  box-shadow:
-    0 0 0 2px #ffffff,
-    0 0 0 4px #af4fff;
-}*/
 
 .product-card-link {
   position: relative;
@@ -2919,7 +2852,6 @@ img {
     0 0 0 4px #af4fff;
 }
 
-
 .modal-input-plus-button::before {
   position: absolute;
   width: 2px;
@@ -2967,10 +2899,8 @@ img {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
   margin: 0;
-  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 
