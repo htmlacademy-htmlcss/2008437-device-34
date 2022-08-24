@@ -1846,12 +1846,12 @@ img {
   top: -2px;
 }
 
-.control-input:focus + .control-mark::before {
+.control-input:focus-visible + .control-mark::before {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
-.control-input:focus + .control-mark-radio::before {
+.control-input:focus-visible + .control-mark-radio::before {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
