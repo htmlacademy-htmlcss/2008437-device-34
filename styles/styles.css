@@ -2050,6 +2050,11 @@ img {
   z-index: 1;
 }
 
+.product-card:hover .product-card-button {
+  display: block;
+}
+
+/*
 .product-card:hover::after {
   content: "Подробнее";
   display: block;
@@ -2069,7 +2074,7 @@ img {
   background: linear-gradient(transparent 16px, #ffe17f 16px, #ffe17f 24px, transparent 24px);
   z-index: 2;
 }
-
+*/
 .product-card:active::before {
   content: "";
   display: block;
@@ -2081,6 +2086,7 @@ img {
   background: rgba(240, 240, 240, 0.8);
 }
 
+/*
 .product-card:active::after {
   content: "Подробнее";
   display: block;
@@ -2099,6 +2105,7 @@ img {
   text-transform: uppercase;
   background: linear-gradient(transparent 16px, #ffc700 16px, #ffc700 24px, transparent 24px);
 }
+*/
 
 .product-card:hover .product-card-title {
   opacity: 0.6;
@@ -2116,14 +2123,8 @@ img {
   opacity: 0.3;
 }
 
+/*
 .product-card:focus {
-  outline: none;
-  box-shadow:
-    0 0 0 2px #ffffff,
-    0 0 0 4px #af4fff;
-}
-
-.product-card:focus-within {
   outline: none;
   box-shadow:
     0 0 0 2px #ffffff,
@@ -2135,7 +2136,7 @@ img {
   box-shadow:
     0 0 0 2px #ffffff,
     0 0 0 4px #af4fff;
-}
+}*/
 
 .product-card-link {
   position: relative;
@@ -2146,16 +2147,6 @@ img {
 
 .product-card-link:focus {
   outline: none;
-  box-shadow:
-    0 0 0 2px #ffffff,
-    0 0 0 4px #af4fff;
-}
-
-.product-card-link:focus-within {
-  outline: none;
-  box-shadow:
-    0 0 0 2px #ffffff,
-    0 0 0 4px #af4fff;
 }
 
 .product-card-link:focus-visible {
@@ -2181,7 +2172,6 @@ img {
   text-align: center;
   letter-spacing: 0.2em;
   text-indent: 2px;
-  ;
   text-transform: uppercase;
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 50%;
@@ -2190,6 +2180,16 @@ img {
 
 .product-card-image {
   margin-bottom: 32px;
+}
+
+.product-card-button {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 75px;
+  width: 220px;
+  line-height: 21px;
+  cursor: pointer;
 }
 
 .product-card-description {
